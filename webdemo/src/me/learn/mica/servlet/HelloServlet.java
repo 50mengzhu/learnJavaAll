@@ -23,6 +23,9 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req,
         HttpServletResponse resp) throws ServletException, IOException {
+        if (true) {
+            throw new IOException("jjjj");
+        }
         resp.setCharacterEncoding("GBK");
         resp.getWriter().write("Hello world!");
     }
